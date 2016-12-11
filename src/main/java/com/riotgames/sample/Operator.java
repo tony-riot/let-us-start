@@ -17,6 +17,18 @@ public enum Operator {
         public double evaluate(double firstOperand, double secondOperand) {
             return firstOperand - secondOperand;
         }
+    },
+    MUL("*") {
+        @Override
+        public double evaluate(double firstOperand, double secondOperand) {
+            return firstOperand * secondOperand;
+        }
+    },
+    DIV("/") {
+        @Override
+        public double evaluate(double firstOperand, double secondOperand) {
+            return firstOperand / secondOperand;
+        }
     };
 
     private final String symbol;
