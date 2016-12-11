@@ -7,8 +7,15 @@ import java.util.Arrays;
  */
 public class CalcApp {
     public double calc(String[] tokens) {
-        final double firstOperand = Double.parseDouble(tokens[0]);
-        final double secondOperand = Double.parseDouble(tokens[1]);
+        final double firstOperand;
+        final double secondOperand;
+
+        firstOperand = Double.parseDouble(tokens[0]);
+        if (tokens.length > 2) {
+            secondOperand = Double.parseDouble(tokens[2]);
+        } else {
+            secondOperand = Double.parseDouble(tokens[1]);
+        }
 
         return firstOperand + secondOperand;
 
@@ -18,7 +25,7 @@ public class CalcApp {
         final CalcApp app = new CalcApp();
         final StringBuilder outputs = new StringBuilder();
         Arrays.asList(args).forEach(value -> outputs.append(value + " "));
-
-        System.out.println( "Addition of values: " + outputs + " = " +  app.calc(args));
+        System.out.print( "Addition of values: " + outputs + " = ");
+        System.out.println(app.calc(args));
     }
 }
