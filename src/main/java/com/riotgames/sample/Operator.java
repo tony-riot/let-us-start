@@ -1,9 +1,9 @@
 package com.riotgames.sample;
 
-import java.util.Arrays;
+
 
 /**
- * Created by tchi on 2016. 12. 11..
+ * Created by realcoding-18-team 17.4.1
  */
 public enum Operator {
     ADD("+") {
