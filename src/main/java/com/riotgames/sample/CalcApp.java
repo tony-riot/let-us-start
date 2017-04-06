@@ -26,7 +26,10 @@ public class CalcApp {
         final CalcApp app = new CalcApp();
         final StringBuilder outputs = new StringBuilder();
         Arrays.asList(args).forEach(value -> outputs.append(value + " "));
-        System.out.print( "Addition of values: " + outputs + " = ");
-        System.out.println(app.calc(args));
+        /*System.out.print( "Addition of values: " + outputs + " = ");
+        System.out.println(app.calc(args));*/
+
+
+
     }
 }
