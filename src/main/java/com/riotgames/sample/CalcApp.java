@@ -29,7 +29,7 @@ public class CalcApp {
         /*System.out.print( "Addition of values: " + outputs + " = ");
         System.out.println(app.calc(args));*/
 
-
+	Logger logger =Logger.getLogger("Pring Result");
 
     }
 }
