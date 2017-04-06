@@ -1,7 +1,7 @@
 package com.riotgames.sample;
 
 import java.util.Arrays;
-import java.util.looging.*;
+import java.util.logging.*;
 
 /**
  * Calculator application
