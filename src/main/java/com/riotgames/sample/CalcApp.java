@@ -28,6 +28,7 @@ public class CalcApp {
         Arrays.asList(args).forEach(value -> outputs.append(value + " "));
 
 	Logger logger =Logger.getLogger("Pring Result");
-	logger.log(Level.INFO,"Addition of values: "+outputs+"="+Double.toString(app.calc(args)));
+	String result="Addtition of values"+outputs+"="+Double.toString(app.calc(args));
+	logger.log(Level.INFO, result);
     }
 }
