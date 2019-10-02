@@ -17,4 +17,31 @@ public class CalcAppTest {
         double result = app.calc(args);
         assertThat(result, is(3.0));
     }
+
+    @Test
+    public void testCalcAppDoesCorrectSubOperation() {
+        String[] args = new String[] { "2", "-", "1" };
+
+        CalcApp app = new CalcApp();
+        double result = app.calc(args);
+        assertThat(result, is(1.0));
+    }
+
+    @Test
+    public void testCalcAppDoesCorrectMulOperation() {
+        String[] args = new String[] { "4", "*", "2" };
+
+        CalcApp app = new CalcApp();
+        double result = app.calc(args);
+        assertThat(result, is(8.0));
+    }
+
+    @Test
+    public void testCalcAppDoesCorrectDivOperation() {
+        String[] args = new String[] { "4", "/", "2" };
+
+        CalcApp app = new CalcApp();
+        double result = app.calc(args);
+        assertThat(result, is(2.0));
+    }
 }
